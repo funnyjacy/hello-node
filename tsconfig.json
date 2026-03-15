@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "module": "NodeNext",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "outDir": "dist"
   },
+  "include": [
+    "src/ts/**/*"
+  ],
   "ts-node": {
-    "transpileOnly": true
+    "transpileOnly": false
   }
 }
